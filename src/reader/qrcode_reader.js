@@ -1,7 +1,5 @@
 import jsQR from "jsqr";
 
-console.log(jsQR)
-
 const properties = {
     FORMAT: {value: "qrcode", writeable: false}
 };
@@ -17,7 +15,7 @@ function QrCodeReader(config, supplements) {
 }
 
 QrCodeReader.prototype.decodePattern  = function(pattern, inputImageWrapper) {
-	console.log(jsQR)
+    console.log(inputImageWrapper);
 	const result = jsQR(inputImageWrapper.data, inputImageWrapper.size.x, inputImageWrapper.size.y);
 	if(result === null ) {
 		return null;
