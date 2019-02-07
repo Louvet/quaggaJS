@@ -29,7 +29,7 @@ const READERS = {
     i2of5_reader: I2of5Reader,
     '2of5_reader': TwoOfFiveReader,
     code_93_reader: Code93Reader,
-    qrcode_reader: QrCodeREader
+    qrcode_reader: QrCodeReader
 };
 export default {
     create: function(config, inputImageWrapper) {
