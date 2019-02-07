@@ -16,7 +16,8 @@ function QrCodeReader(config, supplements) {
 
 QrCodeReader.prototype.decodePattern  = function(pattern, inputImageWrapper) {
     console.log(inputImageWrapper);
-	const result = jsQR(inputImageWrapper.data, inputImageWrapper.size.x, inputImageWrapper.size.y);
+	// const result = jsQR(inputImageWrapper.data, inputImageWrapper.size.x, inputImageWrapper.size.y);
+	const result = "123456";
 	if(result === null ) {
 		return null;
 	}
